@@ -3,7 +3,15 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class ProcessoSeletivo {
     public static void main(String[] args) {
-        selecaoDeCandidatos();
+        imprimirSelecionados();
+    }
+
+    static void imprimirSelecionados() {
+        String [] candidatos = {"FELIPE","MÁRCIA","JULIA","PAULO","AUGUSTO"};
+        System.out.println("Imprimindo a lista de candidatos informando o indice do elemento.");
+        for (int indice = 0; indice < candidatos.length; indice++) {
+            System.out.println("O candidato de numero " + (indice + 1) + " é " + candidatos[indice]);
+        }
     }
 
     static void selecaoDeCandidatos() {
